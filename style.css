@@ -1,0 +1,121 @@
+@font-face {
+    font-family: "FuturaPT Heavy";
+    src: url("fonts/FuturaPT-Heavy.woff") format("woff");
+}
+@font-face {
+    font-family: "ProximaNova";
+    src: url("fonts/ProximaNovaThin.otf") format("OpenType");
+}
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 98.7vw;
+    height: 70vw;
+    background-color: #464f54;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#title {
+    position: relative;
+    top: 16%;
+    width: 73vw;
+    height: 21%;
+    background-color: black;
+    align-self: flex-end;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+}
+#title p {
+    margin-left: 8%;
+}
+#title > p:first-of-type {
+    color: #777777;
+    font-family: "ProximaNova";
+    letter-spacing: .5vw;
+}
+#title > p:last-of-type {
+    color: #fefefe;
+    font-family: "Playfair Display", serif;
+    font-size: 9vh;
+    border-bottom: 2px solid #303030;
+    padding-bottom: 2vh;
+}
+
+#options {
+    position: relative;
+    top: 16%;
+    width: 68vw;
+    height: 9%;
+    background-color: #fabf2d;
+    align-self: flex-end;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 3vw;
+    padding-right: 10vw;
+}
+#options  i {
+    color: #fcdf96;
+    font-size: 6vh;
+}
+#options  i:hover {
+    color: white;
+}
+
+#text {
+    width: 88vw;
+    height: 83%;
+    background-color: white;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#line {
+    height: 100%;
+    width: 0.1%;
+    border: 1px solid #e8eced;
+    margin-left: 3vw;
+}
+#text p {
+    width: 77%;
+    margin-right: 4vw;
+}
+#text p:first-of-type {
+    color: #b5b5b5;
+    font-family: "ProximaNova", sans-serif;
+    font-size: 4vh;
+    text-transform: uppercase;
+    letter-spacing: .5vw;
+    margin-bottom: 5vh;
+}
+#text p:first-of-type + p {
+    margin-bottom: 10vh;
+}
+#text p span {
+    font-family: "FuturaPT Heavy", sans-serif;
+    font-size: 15vh;
+    text-transform: uppercase;
+    color: #2a2a2a;
+}
+#text p br + i {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 5.2vh;
+    color: #8f8f8f;
+}
+#text p:nth-of-type(3), #text p:last-of-type {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 4vh;
+    margin-bottom: 5vh;    
+}
